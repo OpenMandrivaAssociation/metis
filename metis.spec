@@ -54,6 +54,7 @@ partitioning schemes developed in our lab.
 Summary:	The Metis headers and development-related files
 Group:		Development/C
 Requires:	%{libname} = %{EVRD}
+Provides:	%{name}-devel = %{EVRD}
 
 %description -n	%{devname}
 Header and library files of Metis.
