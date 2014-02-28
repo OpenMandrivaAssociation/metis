@@ -1,0 +1,11 @@
+--- metis-5.1.0/libmetis/CMakeLists.txt~	2014-02-28 02:35:39.338696461 +0100
++++ metis-5.1.0/libmetis/CMakeLists.txt	2014-02-28 02:37:32.598698672 +0100
+@@ -6,7 +6,7 @@ file(GLOB metis_sources *.c)
+ add_library(metis ${METIS_LIBRARY_TYPE} ${GKlib_sources} ${metis_sources})
+ set_target_properties(metis PROPERTIES SOVERSION 0)
+ if(UNIX)
+-  target_link_libraries(metis m)
++  target_link_libraries(metis m pcreposix)
+ endif()
+ 
+ if(METIS_INSTALL)

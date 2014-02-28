@@ -1,0 +1,15 @@
+--- metis-5.1.0/include/metis.h.bits~	2013-03-30 17:24:45.000000000 +0100
++++ metis-5.1.0/include/metis.h	2014-02-28 02:28:29.978688080 +0100
+@@ -30,8 +30,11 @@
+  GCC does provides these definitions in stdint.h, but it may require some
+  modifications on other architectures.
+ --------------------------------------------------------------------------*/
++#ifdef __LP64__
++#define IDXTYPEWIDTH 64
++#else
+ #define IDXTYPEWIDTH 32
+-
++#endif
+ 
+ /*--------------------------------------------------------------------------
+  Specifies the data type that will hold floating-point style information.
