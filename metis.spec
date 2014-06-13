@@ -4,7 +4,7 @@
 
 Name:		metis
 Version:	5.1.0
-Release:	3
+Release:	4
 Summary:	Serial Graph Partitioning and Fill-reducing Matrix Ordering
 License:	ASL 2.0 and BSD and LGPLv2+
 Group:		System/Libraries
